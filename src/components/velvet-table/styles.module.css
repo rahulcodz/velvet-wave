@@ -1,0 +1,29 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+thead {
+  text-align: -webkit-match-parent;
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+th {
+  border: 1px solid #dbdada;
+  padding: 5px;
+}
+
+td {
+  border: 1px solid #dbdada;
+  padding: 5px;
+}
+
+.filterButton {
+  background: #000;
+}
