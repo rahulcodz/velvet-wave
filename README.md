@@ -13,15 +13,26 @@ npm install --save velvet-wave
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'velvet-wave'
+import { VelvetTable } from 'velvet-wave'
 import 'velvet-wave/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+export default const App = () => {
+  const columns = [
+    { label: 'Name', key: 'name' },
+    { label: 'Age', key: 'age' },
+    { label: 'Agew', key: 'age' },
+    { label: 'City', key: 'city' },
+    { label: 'Action', key: '' }
+  ]
+
+  const data = [
+    { name: 'Alice', age: 28, city: 'New York' },
+    { name: 'Bob', age: 32, city: 'San Francisco' },
+    { name: 'Charlie', age: 22, city: 'Los Angeles' }
+  ]
+  return <VelvetTable columns={columns} data={data} />
 }
 ```
 
