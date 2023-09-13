@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React from 'react'
-// import styles from './styles.module.css'
+import './styles.module.css'
 interface TableColumn {
   label: string
   key: string
@@ -33,8 +33,8 @@ function VelvetTable({ columns, data }: Props) {
     <table>
       <thead>
         <tr className='header'>
-          {columns?.map((column) => (
-            <th key={column.key} style={styles.tableHeader}>
+          {columns?.map((column, index) => (
+            <th key={index} style={styles.tableHeader}>
               <span>{column.label}</span>
               {/* {false ? (
                 <span className='container' style={styles.filterButton}>
